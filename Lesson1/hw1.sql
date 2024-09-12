@@ -10,7 +10,7 @@ select * from cars where year and price = 2000;
 select * from cars where model = 'bmw' and year > 2014;
 select * from cars where model = 'audi' and year < 2014;
 select * from cars limit 5;
-select * from cars order by id desc limit 10;
+select * from cars order by id desc limit 5;
 
 select model, avg(price) from cars where model = 'kia';
 select model, avg(price) from cars group by model;
