@@ -17,7 +17,7 @@ select model, avg(price) from cars group by model;
 select model, count(*) from cars group by model;
 select model, count(*) as car_count from cars group by model order by car_count desc limit 1;
 
-select * from cars where SUBSTRING(model, 2, 1) = 'a' and substring(model, LENGTH(model) - 1, 1) = 'a';
+select * from cars where model like '_a%a_';
 select * from cars where length(model) > 8;
 
 select * from cars where price > (select avg(price) from cars);
